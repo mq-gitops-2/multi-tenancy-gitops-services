@@ -1,0 +1,17 @@
+# Default values for ocp-subscription.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+metadata:
+  name: ibm-licensing-operator
+  namespace: ibm-common-services
+  annotations: {}
+  labels: {}
+spec:
+  channel: v3
+  installPlanApproval: Automatic
+  name: ibm-licensing-operator-app
+  source: ibm-operator-catalog
+  sourceNamespace: openshift-marketplace
+  config: {}
+  startingCSV: ""
